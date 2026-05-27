@@ -17,8 +17,8 @@ public class MidtermPractice {
         System.out.println(findLongestWordResult);
 
         Map<String, Integer> testCountLongWordsMap = new HashMap<>();
-        testCountLongWordsMap.put("word", 15);
-        testCountLongWordsMap.put("java", 18);
+        testCountLongWordsMap.put("word", 12);
+        testCountLongWordsMap.put("java", 14);
         testCountLongWordsMap.put("repository", 3);
         int countLongWordsResult = countLongWords(testCountLongWordsMap);
         System.out.println(countLongWordsResult);
@@ -26,6 +26,9 @@ public class MidtermPractice {
         float[] testFindAverageArray = {1.5f, 3.5f, 2.0f, 3.0f};
         double findAverageResult = findAverage(testFindAverageArray);
         System.out.println(findAverageResult);
+
+        int countOddNumbersResult = countOddNumbers(testCountLongWordsMap);
+        System.out.println(countOddNumbersResult);
     }
 
     /**
