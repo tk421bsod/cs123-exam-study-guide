@@ -29,6 +29,10 @@ public class MidtermPractice {
 
         int countOddNumbersResult = countOddNumbers(testCountLongWordsMap);
         System.out.println(countOddNumbersResult);
+
+        int[] testAllDivisibleBy3Array = {3, 6, 9, 7};
+        boolean allDivisibleBy3Result = allDivisibleBy3(testAllDivisibleBy3Array);
+        System.out.println(allDivisibleBy3Result);
     }
 
     /**
