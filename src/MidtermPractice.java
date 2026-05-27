@@ -38,8 +38,15 @@ public class MidtermPractice {
      * @param map a Map of strings to integers
      * @return the count of words longer than 5 characters
      * Example: input: ["why"=7, "hello"=8, "brilliant"=99, "world"=15, "amazing"=17] -> output: 2
+     * Time complexity: O(n)
      */
     public static int countLongWords(Map<String, Integer> map) {
+        int count = 0;
+        for (String word : map.keySet()) {
+            if (word.length() > 5) {
+                count++;
+            }
+        }
         return -1;
     }
 
