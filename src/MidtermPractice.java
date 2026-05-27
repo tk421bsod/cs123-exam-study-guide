@@ -63,9 +63,15 @@ public class MidtermPractice {
      * @param arr an array of floats
      * @return the average of the values
      * Example: input: [1.5, 3.5, 2.0, 3.0] -> output: 2.5
+     * Time complexity: O(n)
      */
     public static double findAverage(float[] arr) {
-        return -1.0;
+        double sum = 0.0;
+        for (float val : arr) {
+            sum += val;
+        }
+
+        return sum / arr.length;
     }
 
     /**
