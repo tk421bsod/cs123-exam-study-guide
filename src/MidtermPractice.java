@@ -33,6 +33,13 @@ public class MidtermPractice {
         int[] testAllDivisibleBy3Array = {3, 6, 9, 7};
         boolean allDivisibleBy3Result = allDivisibleBy3(testAllDivisibleBy3Array);
         System.out.println(allDivisibleBy3Result);
+
+        ArrayList<String> testAllStartWithAList = new ArrayList<>();
+        testAllStartWithAList.add("add");
+        testAllStartWithAList.add("apple");
+        testAllStartWithAList.add("ate");
+        boolean allStartWithAResult = allStartWithA(testAllStartWithAList);
+        System.out.println(allStartWithAResult);
     }
 
     /**
