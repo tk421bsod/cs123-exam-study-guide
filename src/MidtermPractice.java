@@ -8,6 +8,12 @@ public class MidtermPractice {
         // After implementing a method, call it here with
         // some sample input and print the result to
         // check if it works. Fix any issues you find.
+        ArrayList<String> testFindLongestWordList = new ArrayList<>();
+        testFindLongestWordList.add("apple");
+        testFindLongestWordList.add("banana");
+        testFindLongestWordList.add("kiwi");
+        String ret = findLongestWord(testFindLongestWordList);
+        System.out.println(ret);
     }
 
     /**
