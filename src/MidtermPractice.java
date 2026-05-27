@@ -22,6 +22,10 @@ public class MidtermPractice {
         testCountLongWordsMap.put("repository", 3);
         int countLongWordsResult = countLongWords(testCountLongWordsMap);
         System.out.println(countLongWordsResult);
+
+        float[] testFindAverageArray = {1.5f, 3.5f, 2.0f, 3.0f};
+        double findAverageResult = findAverage(testFindAverageArray);
+        System.out.println(findAverageResult);
     }
 
     /**
