@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -12,8 +13,15 @@ public class MidtermPractice {
         testFindLongestWordList.add("apple");
         testFindLongestWordList.add("banana");
         testFindLongestWordList.add("kiwi");
-        String ret = findLongestWord(testFindLongestWordList);
-        System.out.println(ret);
+        String findLongestWordResult = findLongestWord(testFindLongestWordList);
+        System.out.println(findLongestWordResult);
+
+        Map<String, Integer> testCountLongWordsMap = new HashMap<>();
+        testCountLongWordsMap.put("word", 15);
+        testCountLongWordsMap.put("java", 18);
+        testCountLongWordsMap.put("repository", 3);
+        int countLongWordsResult = countLongWords(testCountLongWordsMap);
+        System.out.println(countLongWordsResult);
     }
 
     /**
@@ -47,7 +55,7 @@ public class MidtermPractice {
                 count++;
             }
         }
-        return -1;
+        return count;
     }
 
     /**
