@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -14,9 +15,16 @@ public class MidtermPractice {
      * @param list an ArrayList of words
      * @return the longest word in the list
      * Example: input: ["apple", "banana", "kiwi"] -> output: "banana"
+     * Time complexity : O(n)
      */
     public static String findLongestWord(List<String> list) {
-        return "";
+        String longestWord = "";
+        for (String word : list) {
+            if (word.length() > longestWord.length()) {
+                longestWord = word;
+            }
+        }
+        return longestWord;
     }
 
     /**
