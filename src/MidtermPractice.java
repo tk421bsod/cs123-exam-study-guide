@@ -105,7 +105,12 @@ public class MidtermPractice {
      * Example 2: input: [3, 4, 6, 9] -> output: false
      */
     public static boolean allDivisibleBy3(int[] arr) {
-        return false;
+        for (int val : arr) {
+            if (val % 3 != 0) {
+                return false;
+            }
+        }
+        return true;
     }
 
     /**
